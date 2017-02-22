@@ -50,5 +50,50 @@ html,body{
 
 .spinner1::after{
   position: absolute;
-  background: pink;
+  top: -3px;
+  border: 6px solid transparent;
+  border-top-color: #2196F3;
+  border-bottom-color: #2196F3;
+  animation: spin1 1.2s linear infinite;
+}
+
+@keyframes spin1 {
+  0% {transform: rotate(0deg) scale(1);}
+  50% {transform: rotate(45deg) scale(1.3);}
+  100% {transform: rotate(360deg) scale(1);}
+}
+
+.spinner2{
+    animation: spin2 2s linear infinite;
+}
+
+.spinner2::before, .spinner2::after{
+  position: absolute;
+  top: 0;
+  background: #2196F3;
+  height: 10px;
+  width: 35px;
+  animation: spin2 0.5s linear infinite;
+}
+
+@keyframes spin2 {
+  0% {transform: rotate(0deg); }
+  100% {transform: rotate(360deg);}
+}
+
+.spinner3{
+    animation: spin2 2s linear infinite;
+}
+
+.spinner3::before, .spinner3::after{
+  position: absolute;
+  top: 0;
+  background: #8BC34A;
+  height: 15px;
+  width: 15px;
+}
+
+@keyframes spin3 {
+  0% {transform: rotate(0deg); }
+  100% {transform: rotate(360deg);}
 }
